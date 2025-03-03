@@ -1,0 +1,102 @@
+.projects {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: black; /* Black background */
+}
+
+.projects h2 {
+  font-size: 36px;
+  color: #DAB550; /* Gold color */
+  margin-bottom: 40px;
+}
+
+.projects-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; /* Set the gap between videos to 30px */
+}
+
+.projects-slider {
+  display: flex;
+  justify-content: center;
+  gap: 80px; /* This will ensure that the gap between the two projects is 30px */
+}
+
+.project {
+  background-color: black; /* Gold background */
+  border-radius: 10px;
+  width: 320px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.project-video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 177.77%; /* 9:16 Aspect Ratio */
+  overflow: hidden; /* Ensure the video stays within the container */
+}
+
+.project-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the container without distortion */
+  border-radius: 8px;
+}
+
+.project-info {
+  padding: 15px;
+  background-color: black; /* Black background for text */
+  color:#DAB550; /* White text */
+  border-radius: 7px 7px 7px 7px;
+  border: 2px dotted #DAB550; /* Gold border around the title and description */
+}
+
+.project-info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  font-size: 16px;
+}
+
+/* Swipe buttons */
+.swipe-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.swipe-button.left {
+  left: 0;
+}
+
+.swipe-button.right {
+  right: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project {
+    width: 100%;
+  }
+
+  .swipe-button {
+    font-size: 20px;
+    padding: 8px 15px;
+  }
+}

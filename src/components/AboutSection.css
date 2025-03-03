@@ -1,0 +1,67 @@
+.about-section {
+  background-color: black; /* Black background for the section */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 36px;
+  color: #DAB550; /* Gold color for heading */
+  margin-bottom: 30px;
+}
+
+.about-section p {
+  font-size: 20px;
+  color: #DAB550; /* Gold color for the paragraph */
+  margin-bottom: 50px; /* Adds space below the paragraph */
+}
+
+.about-box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensure responsiveness */
+  gap: 30px; /* Space between boxes */
+}
+
+.about-box {
+  background-color: #DAB550; /* Gold background for the box */
+  color: #0B0B0B; /* Deep black text inside the box */
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-box:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #F3D991; /* Lighter Gold on hover */
+}
+
+.about-box-video {
+  width: 100%;
+  height: auto;
+  max-height: 150px; /* Limit height for consistent box size */
+  margin-bottom: 15px;
+  border-radius: 8px;
+  object-fit: cover; /* Ensures the video fills the area proportionally */
+}
+
+.about-box h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.about-box p {
+  font-size: 16px;
+  color:#0B0B0B;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .about-box {
+    width: 100%; /* Full width on small screens */
+  }
+}

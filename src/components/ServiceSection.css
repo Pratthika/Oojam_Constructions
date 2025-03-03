@@ -1,0 +1,77 @@
+.service-section {
+  background-color: black; /* Light gold */
+  padding: 50px 20px;
+  text-align: center;
+  color: #DAB550;
+}
+
+.service-section h2 {
+  font-size: 36px;
+  color:#DAB550; /* Deep black */
+  margin-bottom: 20px;
+}
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Add spacing between boxes */
+  flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.service-box {
+  position: relative;
+  width: 610px;
+  height: 570px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-box:hover .service-image {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.hover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  color: #DAB550; /* Gold text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.service-box:hover .hover-content {
+  opacity: 1; /* Show content on hover */
+}
+
+.hover-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.hover-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.hover-content li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}

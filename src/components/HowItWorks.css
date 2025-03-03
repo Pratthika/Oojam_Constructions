@@ -1,0 +1,73 @@
+.how-it-works {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: black;
+}
+
+.how-it-works h2 {
+  font-size: 36px;
+  color:#dab550;
+  margin-bottom: 30px;
+}
+
+.roadmap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.roadmap-point {
+  position: relative;
+  cursor: pointer;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color:white;
+  color:#0b0b0b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.roadmap-point.active .circle {
+  background-color:#dab550;
+  color: #0b0b0b;
+}
+
+.connector {
+  width: 80px; /* Adjust for spacing between steps */
+  height: 5px;
+  background-color: white;
+  z-index: 1;
+}
+
+.step-display {
+  margin-top: 20px;
+}
+
+.step-image {
+  width: 80%;
+  max-width: 600px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.step-info h3 {
+  font-size: 24px;
+  color:#dab550;
+}
+
+.step-info p {
+  font-size: 16px;
+  color:#dab550;
+}

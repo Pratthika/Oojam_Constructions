@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #0B0B0B;
+  color: #DAB550;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between the image and text */
+}
+
+.logo-image {
+  height: 50px; /* Adjust height based on design */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #DAB550;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color:#f3d991; /* Slightly lighter gold on hover */
+}

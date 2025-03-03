@@ -1,0 +1,91 @@
+.customer-review {
+  padding: 40px 20px;
+  background-color: black;
+  box-sizing: border-box;
+}
+
+.customer-review h2 {
+  font-family: 'Jost', sans-serif;
+  font-size: 36px;
+  color:#DAB550;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.reviews-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space evenly between arrows and reviews */
+  overflow: hidden; /* Prevent scrollbars */
+  padding: 0 30px; /* Add padding for better balance */
+  gap: 20px; /* Space between arrows and reviews-container */
+  position: relative;
+}
+
+.arrow {
+  font-size: 2rem;
+  background-color: #DAB550;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #EECB59;
+  padding: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow:hover {
+  background-color: #EECB59;
+  transform: scale(1.2);
+}
+
+.reviews-container {
+  display: flex;
+  gap: 20px; /* Space between review cards */
+  transition: transform 0.5s ease; /* Smooth sliding */
+  flex-grow: 1; /* Allow the container to adapt to available space */
+  justify-content: center; /* Center reviews inside the container */
+}
+
+.review {
+  width: 300px; /* Fixed width for each review box */
+  background-color: #fff;
+  border-radius: 8px;
+  border: 2px solid #DAB550;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+}
+
+.review:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.review-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #EECB59;
+  margin-bottom: 10px;
+}
+
+.review-info h3 {
+  font-family: 'Jost', sans-serif;
+  font-size: 20px;
+  color: #DAB550;
+  margin-bottom: 5px;
+}
+
+.review-info p {
+  font-family: 'Jost', sans-serif;
+  font-size: 16px;
+  color: #0B0B0B;
+  margin-top: 10px;
+  line-height: 1.4;
+}
